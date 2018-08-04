@@ -18,18 +18,60 @@
     }
     #content{
         height: 500px;
+        width: 900px;
         background-color: darkmagenta;
+        float: left;
     }
     #footer{
+        /*  supaya bisa turun atau ersih dari float */
+        clear: both;
         height: 80px;
         background-color: dodgerblue;
+    }
+    .imgheader{
+        height: 100px;
+    }
+    a{
+background-color: chartreuse;
+display: block;
+text-align: center;
+margin-top: 10px;
+margin-right: 10px;
+margin-left: 10px;
+    }
+    a:hover{
+        background-color: blue;
+        color: white;
+    }
+    .judul{
+        margin:25px 50px 100px 250px;
+        background-color: darkgrey;
+        padding-top: 10px;
+        padding-left:20px;    
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+    .artikel{
+        padding: 20px 10px 10px 20px;
+        background-color: darkturquoise;
+        border: 1px solid black;
     }
     </style>
 </head>
 <body>
-    <div id="header">Ini adalah Header website</div>
-    <div id="menu-kiri" > In adalah menu kiri</div>
-    <div id="content" >Ini adalah isi website</div>
+    
+    <div id="header"><img class="imgheader" src="gambar.png"alt="">
+    <img class="imgheader" src="shun.gif" alt=""></div>
+    <div id="menu-kiri" > In adalah menu kiri
+        <a href="">Project 1</a>
+        <a href="">Project 2</a>
+        <a href="">Project 3</a>
+    </div>
+    <div id="content" >Ini adalah isi website
+        <p class="judul">Ini adalah judul</p>
+        <p class="artikel">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione totam aspernatur odit odio inventore? Atque earum temporibus iure minus sed laudantium nulla vel quia quasi explicabo, sit placeat ratione nobis!</p>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellat aperiam laudantium excepturi corporis delectus officiis quidem, vero dolorem nihil. Ea eaque eligendi reprehenderit. Cumque odio vitae et corporis esse.</p>
+    </div>
     <div id="footer" >ini adalah footer</div>
 </body>
 </html>
